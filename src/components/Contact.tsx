@@ -3,6 +3,8 @@ import { Mail, Send, MapPin, ArrowUpRight, Check } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 const Contact: React.FC = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [sending, setSending] = useState(false);
@@ -188,10 +190,10 @@ const Contact: React.FC = () => {
         {/* Minimalist Engineering Footer */}
         <div className="mt-20 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
           <div>
-            Aadithya Sreekaant P · {new Date().getFullYear()}
+            Aadithya Sreekaant P · {CURRENT_YEAR}
           </div>
           <div className="flex items-center gap-4 text-zinc-500">
-            <span>React 18</span>
+            <span>React 19</span>
             <span>TypeScript</span>
             <span>Tailwind</span>
             <span>Vite</span>

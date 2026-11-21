@@ -29,8 +29,10 @@ const Hero: React.FC = () => {
       if (displayed.length > 0) {
         timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 30);
       } else {
-        setCurrentTagline((prev) => (prev + 1) % taglines.length);
-        setTyping(true);
+        timeout = setTimeout(() => {
+          setCurrentTagline((prev) => (prev + 1) % taglines.length);
+          setTyping(true);
+        }, 400);
       }
     }
     return () => clearTimeout(timeout);
