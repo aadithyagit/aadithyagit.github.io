@@ -1,6 +1,6 @@
 # Aadithya Sreekaant P — Personal Developer Portfolio
 
-> Modern, performance-focused personal portfolio website inspired by high-end developer portfolios and design systems (Linear, Vercel, Aashish Jaini). Built with **React 18**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
+> Modern, performance-focused personal portfolio website inspired by high-end developer portfolios and design systems (Linear, Vercel). Built with **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
 
 🌐 **Live URL**: [https://aadithyagit.github.io/](https://aadithyagit.github.io/)
 
@@ -8,12 +8,14 @@
 
 ## ⚡ Tech Stack
 
-- **Framework**: React 18 + Vite
-- **Language**: TypeScript
+- **Framework**: React 19 + Vite 8
+- **Language**: TypeScript (Strict Mode)
 - **Styling**: Tailwind CSS v4
 - **Animations**: Framer Motion
 - **Icons**: Lucide React + Custom SVG Icons
-- **Deployment**: GitHub Pages (Custom Root Domain: `aadithyagit.github.io`)
+- **Resilience**: React ErrorBoundary with graceful fallback
+- **CI/CD**: GitHub Actions (Lint, Build, and Automated Pages Deployment)
+- **Deployment**: GitHub Pages (Domain: `aadithyagit.github.io`)
 
 ---
 
