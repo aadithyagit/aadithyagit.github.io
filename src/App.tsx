@@ -9,20 +9,23 @@ import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-[#060b16] min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Achievements />
-      <Certificates />
-      <Contact />
-    </div>
+    <ErrorBoundary>
+      <div className="bg-[#060b16] min-h-screen">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Achievements />
+        <Certificates />
+        <Contact />
+      </div>
+    </ErrorBoundary>
   );
 };
 
