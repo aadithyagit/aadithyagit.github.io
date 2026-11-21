@@ -52,7 +52,7 @@ describe('Portfolio Data Integrity', () => {
       const categories = Object.keys(skills);
       assert.ok(categories.length >= 3, 'Should have at least 3 skill categories');
       for (const cat of categories) {
-        const items = (skills as Record<string, string[]>)[cat];
+        const items = (skills as Record<string, unknown>)[cat];
         assert.ok(Array.isArray(items) && items.length > 0, `Skill category ${cat} must not be empty`);
       }
     });
